@@ -14,13 +14,13 @@
  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
   <fieldset>
     <legend>My Info</legend>
-      First name:<input type="text" name="first_name_field"><br><br>
-      Last name:<input type="text" name="last_name_field"><br><br>
-      Phone Number:<input type="text" name="phone_field"><br><br>
-      Email Address:<input type="text" name="email_field"><br><br>
+      <p>First name:<input type="text" name="first_name_field"></p>
+      <p>Last name:<input type="text" name="last_name_field"></p>
+      <p>Phone Number:<input type="text" name="phone_field"></p>
+      <p>Email Address:<input type="email" name="email_field"></p>
       
-  Gender: <input type="radio" name="gender_field" value="Male" checked> Male
-  <input type="radio" name="gender_field" value="Female"> Female<br><br>
+  <p>Gender: <input type="radio" name="gender_field" value="Male" checked> Male
+    <input type="radio" name="gender_field" value="Female"> Female</p>
 
     Age: <select name="age_field">
     <option value="under 18">under 18</option>
@@ -31,13 +31,28 @@
     <option value="55-64">55-64</option>
     <option value="65 and over">65 and over</option> 
   </select>    
-      
-      
-      
-      
-
   </fieldset>
-      <input type="submit" value="Submit">
+  
+  <fieldset>
+    <legend>My Availability</legend>
+      <p>Days Available:</p>
+      <p><input type="checkbox" name="available_field[]" value="Sunday"> Sunday</p>
+      <p><input type="checkbox" name="available_field[]" value="Monday"> Monday</p>
+      <p><input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday</p>
+      <p><input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday</p>
+      <p><input type="checkbox" name="available_field[]" value="Thursday"> Thursday</p>
+      <p><input type="checkbox" name="available_field[]" value="Friday"> Friday</p>
+      <p><input type="checkbox" name="available_field[]" value="Saturday"> Saturday</p>      
+    
+<p>Any Comments?:</p>    
+<p>
+     <textarea name="comments_field" rows="10" cols="30">
+     </textarea> 
+</P>    
+    
+  </fieldset>
+      <input type="hidden" name="hidden_field" value="drabick"> 
+      <p><input type="submit" value="Submit"></p>
 </form>     
 
 
